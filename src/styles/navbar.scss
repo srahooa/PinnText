@@ -1,0 +1,17 @@
+@import './index.scss';
+
+.nav {
+    position: fixed;
+    height: 10%;
+    width: 100vw;
+    background-color: yellowgreen;
+    margin-top: -10;
+    text-align: center;
+    header {
+        padding: 20px;
+    }
+    .links{
+        @include flex-r;
+        justify-content: space-evenly;
+    }
+}

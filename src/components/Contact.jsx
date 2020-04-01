@@ -7,6 +7,25 @@ export default function Contact() {
         <>
             <NavBar/>
             <h1>Contact</h1>
+            <h3>Drop me a line, I would love to hear from you.</h3>
+            <form name="contact" method="post">
+                <input type="hidden" name="form-name" value="contact" />
+                <div id="message">
+                    <textarea id="textbox" name="message"></textarea>
+                    <label>Message</label>
+                </div>
+                <div id="name">
+                    <label id="nameLabel">Name</label>
+                    <input id="nameInput" type="text" name="name"></input>
+                </div>
+                <div id="email">
+                    <label id="emailLabel">Email</label>
+                    <input input id="emailInput" type="email" name="email"></input>
+                </div>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
         </>
     )
 }
