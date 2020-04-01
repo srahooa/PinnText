@@ -1,9 +1,18 @@
 @use "sass:map";
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  background-color: white;
-  font-family: 'Courier New', Courier, monospace;
+  background-color: whitesmoke;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: lighter;
   padding: 0;
   margin: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 420px) {
@@ -21,4 +30,13 @@ body {
     font-size: 3rem;
   }
 }
-/*# sourceMappingURL=index.css.map */
+
+@mixin flex-r {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-c {
+    display: flex;
+    flex-direction: column;
+}
